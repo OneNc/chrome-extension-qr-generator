@@ -1,0 +1,84 @@
+.logo-uploader {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.logo-uploader label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.upload-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.upload-btn {
+    padding: 8px 12px;
+    background-color: #edf2f7;
+    border: 2px dashed #cbd5e0;
+    border-radius: 4px;
+    color: #4a5568;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-btn:hover:not(:disabled) {
+    background-color: #e2e8f0;
+    border-color: #a0aec0;
+}
+
+.upload-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.logo-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 6px 10px;
+    background-color: #f0fff4;
+    border: 1px solid #9ae6b4;
+    border-radius: 4px;
+}
+
+.logo-name {
+    font-size: 11px;
+    color: #22543d;
+    word-break: break-all;
+    flex: 1;
+}
+
+.remove-logo-btn {
+    padding: 4px 8px;
+    background-color: #fc8181;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.remove-logo-btn:hover:not(:disabled) {
+    background-color: #f56565;
+}
+
+.remove-logo-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.logo-help {
+    font-size: 11px;
+    color: #718096;
+    margin-top: -3px;
+}
