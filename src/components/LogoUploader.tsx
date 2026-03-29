@@ -1,6 +1,6 @@
 import { ChangeEvent, useRef } from 'react'
-import { fileToBase64 } from '../utils/helpers'
-import { validateLogoFile } from '../core/qr-core'
+import { fileToBase64 } from '../utils/helpers.ts'
+import { validateLogoFile } from '../core/qr-core.ts'
 import '../styles/logo-uploader.css'
 
 interface LogoUploaderProps {

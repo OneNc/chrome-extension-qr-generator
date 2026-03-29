@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
-import QRPreview from './components/QRPreview'
-import InputForm from './components/InputForm'
-import LogoUploader from './components/LogoUploader'
-import PatternSelector from './components/PatternSelector'
-import { generateQR, downloadQR, MarkPattern } from './core/qr-core'
-import { formatError, getCurrentURL } from './utils/helpers'
+import QRPreview from './components/QRPreview.tsx'
+import InputForm from './components/InputForm.tsx'
+import LogoUploader from './components/LogoUploader.tsx'
+import PatternSelector from './components/PatternSelector.tsx'
+import { generateQR, downloadQR, MarkPattern } from './core/qr-core.ts'
+import { formatError, getCurrentURL } from './utils/helpers.ts'
 import './styles/app.css'
 
 interface GeneratedQR {
@@ -157,7 +157,7 @@ function App() {
                         value={markPattern}
                         onChange={(newPattern) => {
                             setMarkPattern(newPattern)
-                            localStorage.setItem('qr-mark-pattern', newPattern)
+                            localStorage.setItem('qr-mark-pattern', String(newPattern))
                         }}
                         disabled={loading}
                     />

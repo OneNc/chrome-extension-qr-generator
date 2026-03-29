@@ -61,7 +61,7 @@ export const generateQR = async (options: QRGenerateOptions): Promise<QRResult> 
             'Q': 'Q',
             'H': 'H',
         }
-        const mappedErrorLevel = errorLevelMap[errorCorrection] || 'M'
+        const mappedErrorLevel = errorLevelMap[errorCorrection] || 'H'
 
         const qrCode = new QRCodeStyling({
             width,
@@ -76,7 +76,7 @@ export const generateQR = async (options: QRGenerateOptions): Promise<QRResult> 
             image: logoImage,
             imageOptions: logoImage ? {
                 hideBackgroundDots: true,
-                imageSize: 0.2,
+                imageSize: 0.6,
                 margin: 8,
             } : undefined,
             dotsOptions: {
@@ -87,7 +87,7 @@ export const generateQR = async (options: QRGenerateOptions): Promise<QRResult> 
                 color: '#000000',
                 type: getPatternStyle(markPattern).cornersSquareType,
             },
-            cornersDotsOptions: {
+            cornersDotOptions: {
                 color: '#000000',
                 type: getPatternStyle(markPattern).cornersDotType,
             },

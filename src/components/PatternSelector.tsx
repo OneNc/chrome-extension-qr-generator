@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react'
-import { MarkPattern } from '../core/qr-core'
+import { MarkPattern } from '../core/qr-core.ts'
 import '../styles/pattern-selector.css'
 
 interface PatternSelectorProps {
