@@ -21,4 +21,5 @@ build/
 .parcel-cache/
 out/
 Thumbs.db
+favicon.png
 
